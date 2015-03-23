@@ -1,7 +1,28 @@
+#StackSync Ignore File
+
+#Eclipse Stuffs
+.settings
+.checkstyle
+project.properties
+
+#Gradle
+.gradle
+build/
+bin/
+
+# Mac ignorables
+.DS_Store
+
+# Linux ignorables
+.directory
+
+#Java ignorables
 *.class
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+#Maven Ignorables 
 /target/
