@@ -1,0 +1,38 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.stacksync'
+version = '0.6.11'
+
+description = """StackSync Server"""
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+
+
+repositories {
+        
+     maven { url "http://oss.sonatype.org/content/groups/public" }
+     maven { url "https://repository.sonatype.org/content/groups/forge" }
+     maven { url "http://ast2-deim.urv.cat/artifactory/ast-internal-repository" }
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'commons-daemon', name: 'commons-daemon', version:'1.0.15'
+    compile group: 'com.stacksync', name: 'stacksync-commons', version:'1.4.2'
+    compile group: 'objectmq', name: 'objectmq', version:'0.5.7'
+    compile group: 'junit', name: 'junit', version:'4.11'
+    compile group: 'com.rabbitmq', name: 'amqp-client', version:'3.0.1'
+    compile group: 'log4j', name: 'log4j', version:'1.2.16'
+    compile group: 'log4j', name: 'apache-log4j-extras', version:'1.1'
+    compile group: 'org.apache.xmlrpc', name: 'xmlrpc-client', version:'3.1.2'
+    compile group: 'org.apache.xmlrpc', name: 'xmlrpc-common', version:'3.1.2'
+    compile group: 'org.apache.xmlrpc', name: 'xmlrpc-server', version:'3.1.2'
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.2.4'
+    compile group: 'commons-cli', name: 'commons-cli', version:'1.1'
+    compile group: 'commons-io', name: 'commons-io', version:'2.2'
+    compile group: 'postgresql', name: 'postgresql', version:'9.1-901.jdbc4'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version:'4.1.2'
+    compile group: 'joda-time', name: 'joda-time', version:'2.3'
+}
